@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -10,14 +42,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-}
-
-body {
-  height: 100%;
-  min-width: 320px;
-  line-height: 1;
-  font-family: "Jura", sans-serif;
-  color: #000fff;
 }
 
 h1,
@@ -84,7 +108,60 @@ li {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 10px;
+  max-width: 1140px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+body {
+  height: 100%;
+  min-width: 320px;
+  line-height: 1;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #5A5A5A;
+  font-size: 16px;
+}
+
+.header__wrapper-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 130px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__menu {
+  padding-right: 35px;
+}
+
+.header__menu-box {
+  padding-right: 50px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item {
+  padding-left: 80px;
+}
+
+.menu__list-item {
+  padding-left: 30px;
+  font-weight: 700;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.header__btn img {
+  border: none;
 }

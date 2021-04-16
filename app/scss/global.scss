@@ -7,13 +7,7 @@ html{
 *, *::before, *::after{
 	box-sizing: inherit;
 }
-body{
-	height: 100%;
-	min-width: $minWidth;
-	line-height: 1;
-	font-family: $fontFamily;
-	color: $text;
-}
+
 h1, h2, h3, h4, h5, h6, p{
 	font-weight: inherit;
 	line-height: inherit;
@@ -55,7 +49,17 @@ ul, li{
 
 //Дежурные классы///////////////////////////////////////////////////////////////////////////////////////////////
 .container {
-    max-width: 1200px;
-    padding: 0 10px;
+    max-width: 1140px;
+    padding: 0 15px;
     margin: 0 auto;
+}
+
+body{
+	height: 100%;
+	min-width: $minWidth;
+	line-height: 1;
+	font-family: $fontFamily;
+	color: $text;
+	font-size: 16px;
+
 }

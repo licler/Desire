@@ -1,0 +1,36 @@
+// start header
+.header__wrapper-top {
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu {
+    padding-right: 35px;
+}
+.header__menu-box {
+    padding-right: 50px;
+}
+.menu__list {
+    display: flex;
+}
+.menu__list-item + .menu__list-item {
+    padding-left: 80px;
+}
+.menu__list-item {
+    padding-left: 30px;
+    font-weight: 700;
+}
+.logo {
+    margin: 0 auto;
+}
+.header__btn {
+    img {
+        border: none;
+    }
+    
+}
+
+
+
+// end header
