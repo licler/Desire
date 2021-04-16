@@ -162,6 +162,7 @@ body {
   margin: 0 auto;
 }
 
-.header__btn img {
+.header__btn {
   border: none;
+  background-color: transparent;
 }
