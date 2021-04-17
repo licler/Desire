@@ -45,7 +45,7 @@ ul, li{
 	min-height: 100%;
 	overflow-x: hidden;
 }
-.content{
+.main {
 	flex: 1 0 auto;
 }
 .footer{
@@ -62,7 +62,7 @@ ul, li{
 body{
 	height: 100%;
 	min-width: $minWidth;
-	line-height: 1;
+	line-height: 27px;
 	font-family: $fontFamily;
 	color: $text;
 	font-size: 16px;
