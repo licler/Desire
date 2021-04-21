@@ -1,0 +1,26 @@
+// start slider
+.slider {
+    background-repeat: no-repeat;
+    background-position: top center;
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__item-info {
+        padding-top: 174px;
+        max-width: 635px;
+    }
+    &__item-title {
+        font-size: 110px;
+        font-family: "Montserrat-Bold";
+        color: $title;
+    }
+    &__item-images {
+        margin-left: -20%;
+    }
+}
+
+
+
+
+// end slider

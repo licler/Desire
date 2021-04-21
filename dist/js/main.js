@@ -1,9 +1,12 @@
 $(function(){
-	$('.slider__items').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
+
+
+  $('.slider__items').slick({	
+    arrows: false,
+    dots: true
+	  // autoplay: true
+  });
+	
 	
 	
 	
