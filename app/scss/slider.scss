@@ -2,21 +2,68 @@
 .slider {
     background-repeat: no-repeat;
     background-position: top center;
-    &__item {
+
+    &__item-box {
         display: flex !important;
-        justify-content: space-between;
+        justify-content: center;
     }
+
     &__item-info {
         padding-top: 174px;
         max-width: 635px;
+        margin-left: 25px;
     }
+
     &__item-title {
         font-size: 110px;
+        line-height: 134px;
         font-family: "Montserrat-Bold";
         color: $title;
+        margin-top: 0;
+        position: relative;
+        padding-bottom: 26px;
+    }
+
+    &__item-title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 185px;
+        background-color: #6D7278;
+        left: 0;
+        bottom: 0;
+    }
+    &__item-desc {
+        margin-top: 26px;
     }
     &__item-images {
-        margin-left: -20%;
+        margin-left: -15%;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 87px;
+        li {
+            display: inline-block;
+            margin-right: 13px;
+            margin-left: 13px;
+        }
+        button {
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: $title;
+        }
+        li.slick-active {
+            button {
+                background-color: #FFEF35;
+            }
+        }
     }
 }
 
