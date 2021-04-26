@@ -37,6 +37,7 @@
     }
 
     &__box-info {
+        background-color: rgba(#fff, .7);
         position: absolute;
         top: 0;
         left: 0;
@@ -46,6 +47,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        opacity: 0;
+        transition: opacity .9s;
     }
 
     &__box-images {
@@ -61,6 +64,7 @@
         position: relative;
         padding-bottom: 19px;
     }
+
     &__box-title::before {
         content: "";
         width: 200px;
@@ -70,14 +74,19 @@
         right: 0;
         left: 0;
         bottom: 0;
-
     }
+
     &__box-desc {
         padding-top: 19px;
         font-weight: 600;
         font-size: 14px;
         line-height: 28px;
     }
+}
+
+.collection__box:hover .collection__box-info {
+    opacity: 1;
+    transition: opacity .6s;
 }
 
 .title {
@@ -87,10 +96,5 @@
     line-height: 51px;
     text-align: center;
 }
-
-
-
-
-
 
 // end collection
