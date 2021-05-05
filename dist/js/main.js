@@ -10,5 +10,5 @@ $(function(){
 	
 	
 	
-	
+  var mixer = mixitup('.furniture__items');	
 });

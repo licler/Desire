@@ -432,6 +432,54 @@ body {
   transition: opacity .6s;
 }
 
+.furniture__inner {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.furniture__inner button {
+  height: 40px;
+  text-align: center;
+  border: 1px solid #454647;
+  background-color: transparent;
+  border-radius: 16px;
+  padding: 6px 23px;
+  color: #8F8D8D;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.furniture__inner .furniture__inner-btn + .furniture__inner-btn {
+  margin-right: 25px;
+}
+
+.furniture__inner .furniture__inner-btn:first-child {
+  margin-right: 25px;
+}
+
+.furniture__inner .mixitup-control-active {
+  background-color: #FFEF35;
+  color: #363838;
+}
+
+.furniture__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.furniture__item-link:first-child {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
 .works {
   padding-bottom: 109px;
 }

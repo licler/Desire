@@ -1,0 +1,47 @@
+// start furniture
+.furniture__inner {
+    margin: 0 auto 40px;
+    text-align: center;
+
+    button {
+        height: 40px;
+        text-align: center;
+        border: 1px solid #454647;
+        background-color: transparent;
+        border-radius: 16px;
+        padding: 6px 23px;
+        color: #8F8D8D;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .furniture__inner-btn+.furniture__inner-btn {
+        margin-right: 25px;
+    }
+
+    .furniture__inner-btn:first-child {
+        margin-right: 25px;
+    }
+
+    .mixitup-control-active {
+        background-color: #FFEF35;
+        color: $title;
+    }
+}
+
+.furniture__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+
+}
+
+.furniture__item-link:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+// end furniture
