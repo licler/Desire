@@ -10,5 +10,12 @@ $(function(){
 	
 	
 	
-  var mixer = mixitup('.furniture__items');	
+  var mixer = mixitup('.furniture__items',{
+    load: {
+        filter: '.category-b'
+    }
+    });
+
+
+
 });
