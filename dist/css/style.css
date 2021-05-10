@@ -497,6 +497,61 @@ body {
   grid-row: span 2;
 }
 
+.ourblog {
+  margin-bottom: 99px;
+}
+
+.ourblog__title {
+  font-size: 36px;
+  line-height: 51px;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  width: 430px;
+  margin: 0 auto;
+  color: #363838;
+  text-align: center;
+}
+
+.ourblog__items {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ourblog__item-link {
+  margin-bottom: 20px;
+}
+
+.ourblog__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 7px;
+}
+
+.ourblog__item-author {
+  margin-left: 6px;
+}
+
+.ourblog__item-name {
+  margin-left: 6px;
+}
+
+.ourblog__item-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  font-family: "Montserrat-Bold";
+  color: #363838;
+}
+
 .works {
   padding-bottom: 109px;
 }
