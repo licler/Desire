@@ -26,6 +26,7 @@
     "gulp-ttf2woff2": "^4.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "jquery": "^3.5.1",
@@ -33,7 +34,7 @@
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
-    "webp-converter": "^2.2.3",
+    "webp-converter": "2.2.3",
     "wow.js": "^1.2.2"
   },
   "dependencies": {

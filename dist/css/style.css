@@ -174,6 +174,86 @@ body {
   background-color: transparent;
 }
 
+.right-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 695px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 41px;
+  -webkit-box-shadow: -2px 3px 17px 0 #000;
+  box-shadow: -2px 3px 17px 0 #000;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+.right-btn.right-btn--close {
+  -webkit-transform: translateX(500%);
+  -ms-transform: translateX(500%);
+  transform: translateX(500%);
+  z-index: 1000;
+}
+
+.right-btn__close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.right-btn__content {
+  text-align: center;
+  max-width: 483px;
+  margin: 0 auto;
+}
+
+.right-btn__logo {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 26px;
+  margin-left: -60px;
+}
+
+.right-btn__title {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #363838;
+  position: relative;
+}
+
+.right-btn__title::before {
+  content: "";
+  width: 252px;
+  height: 1px;
+  background-color: #6D7278;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.right-btn__text {
+  padding-top: 17px;
+  padding-bottom: 75px;
+}
+
+.right-btn__picture {
+  max-width: 485px;
+}
+
 .slider {
   background-repeat: no-repeat;
   background-position: top center;
@@ -186,11 +266,14 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider__item-info {
   padding-top: 174px;
-  max-width: 635px;
+  max-width: 645px;
   margin-left: 25px;
 }
 
@@ -219,8 +302,12 @@ body {
   margin-top: 26px;
 }
 
-.slider__item-images {
-  margin-left: -15%;
+.slider__item-img {
+  margin-left: -12%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 703px;
+  height: 815px;
 }
 
 .slider .slick-dots {

@@ -6,11 +6,12 @@
     &__item-box {
         display: flex !important;
         justify-content: center;
+        align-items: center;
     }
 
     &__item-info {
         padding-top: 174px;
-        max-width: 635px;
+        max-width: 645px;
         margin-left: 25px;
     }
 
@@ -37,8 +38,12 @@
     &__item-desc {
         margin-top: 26px;
     }
-    &__item-images {
-        margin-left: -15%;
+    &__item-img {
+        margin-left: -12%;
+        object-fit: cover;
+     width: 703px;
+     height: 815px;
+
     }
     .slick-dots {
         display: flex;
