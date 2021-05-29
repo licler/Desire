@@ -53,3 +53,10 @@ $md4: 479.98;
 		font-style: #{$style};
 	}
 }
+//Подключение fancybox
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}

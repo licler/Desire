@@ -88,3 +88,22 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 }
+
+.breadcrumb {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 14px;
+
+	&__list {
+		display: flex;
+	}
+
+	&__list-link {
+		font-size: 14px;
+		color: $text;
+	}
+
+	&__list-item::after {
+		content: "/";
+		margin-right: 3px;
+	}
+}
