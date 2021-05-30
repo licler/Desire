@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery</title>
     <link type="text/css" rel="stylesheet" href="css/libs.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,12 +17,12 @@
                     <nav class="header__menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="about.html">
                                     About
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link menu__list-link--active" href="#">
                                     Gallery
                                 </a>
                             </li>
@@ -34,7 +34,7 @@
                     <nav class="header__menu-box">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="blog1.html">
                                     Blog
                                 </a>
                             </li>
@@ -72,7 +72,210 @@
         </div>
     </header>
     <div class="wrapper">
-        <main class="main"></main>
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__list-item"><a href="#" class="breadcrumb__list-link">Home</a></li>
+                        <li class="active">Gallery</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="gallery">
+                <div class="container-fluid">
+                    <div class="furniture">
+                        <div class="container">
+                            <div class="furniture__inner">
+                                <button class="furniture__inner-btn" data-filter=".category-a">
+                                    Bedroom furniture
+                                </button>
+                                <button class="furniture__inner-btn" data-filter=".category-b">
+                                    Living room furniture
+                                </button>
+                                <button class="furniture__inner-btn" data-filter=".category-c">
+                                    Office furniture
+                                </button>
+                                <button class="furniture__inner-btn" data-filter=".category-d">
+                                    Dining room futniture
+                                </button>
+                                <button class="furniture__inner-btn" data-filter=".category-e">
+                                    Chair
+                                </button>
+                            </div>
+                        </div>
+                        <div class="furniture__items">
+                            <div class="furniture__item mix category-a" data-order="1">
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                            </div>
+        
+                            <div class="furniture__item mix category-b" data-order="2">
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                            </div>
+        
+                            <div class="furniture__item mix category-c" data-order="3">
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                            </div>
+        
+                            <div class="furniture__item mix category-d" data-order="4">
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                            </div>
+        
+                            <div class="furniture__item mix category-e" data-order="5">
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_1.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_2.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_3.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_4.jpg" alt="furniture">
+                                </a>
+                                <a class="furniture__item-link" href="#">
+                                    <img class="furniture__item-img" src="img/content/furniture/icon_5.jpg" alt="furniture">
+                                </a>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">

@@ -75,7 +75,7 @@
         &::after {
         content: "";
         background-image: url('../img/content/about/inspiration-bg.jpg');
-        height: 362px;
+        height: 385px;
         position: absolute;
         left: 0;
         right: 0;
@@ -139,3 +139,24 @@
 
 
 // end inspiration
+
+// start partners
+.partners {
+   margin: 16px 0 60px;
+   &__items {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   }
+   &__item {
+       margin: 0 auto;
+   }
+}
+// end partners
+
+// start collection
+
+.collection__box-wrapper--collect {
+    margin-bottom: 70px;
+}
+// end collection
+

@@ -119,6 +119,12 @@ li {
   margin: 0 auto;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 body {
   height: 100%;
   min-width: 320px;
@@ -195,6 +201,23 @@ body {
   content: "";
   position: absolute;
   width: 53px;
+  height: 2px;
+  opacity: .7;
+  border-radius: 1px;
+  background-color: #363838;
+  left: 0;
+  bottom: 0;
+}
+
+.menu__list-links--active {
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.menu__list-links--active::before {
+  content: "";
+  position: absolute;
+  width: 39px;
   height: 2px;
   opacity: .7;
   border-radius: 1px;
@@ -827,7 +850,7 @@ body {
 .inspiration::after {
   content: "";
   background-image: url("../img/content/about/inspiration-bg.jpg");
-  height: 362px;
+  height: 385px;
   position: absolute;
   left: 0;
   right: 0;
@@ -904,6 +927,134 @@ body {
   background-color: #363838;
   border-radius: 1px;
   margin-top: -2px;
+}
+
+.partners {
+  margin: 16px 0 60px;
+}
+
+.partners__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.partners__item {
+  margin: 0 auto;
+}
+
+.collection__box-wrapper--collect {
+  margin-bottom: 70px;
+}
+
+.gallery {
+  padding: 83px 0 148px;
+}
+
+.furniture__item-link:nth-child(8) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
+.blog {
+  margin-top: 59px;
+}
+
+.blog__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blog__furniture {
+  padding-bottom: 50px;
+  margin-bottom: 75px;
+}
+
+.blog__furniture-images {
+  margin-bottom: 25px;
+}
+
+.blog__furniture-box {
+  max-width: 729px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #707070;
+  margin-bottom: 19px;
+}
+
+.blog__title {
+  max-width: 729px;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  line-height: 38px;
+  color: #363838;
+  margin-bottom: 6px;
+}
+
+.blog__text {
+  max-width: 729px;
+}
+
+.blog__quote {
+  width: 729px;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(223, 223, 223, 0.5);
+  padding: 54px 65px;
+  margin-bottom: 74px;
+}
+
+.blog__quote-box {
+  font-size: 24px;
+  font-family: "OpenSans-LightItalic";
+  line-height: 38px;
+  color: #363838;
+  position: relative;
+  padding-bottom: 23px;
+  margin-bottom: 23px;
+}
+
+.blog__box::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 1px;
+  background-color: #979797;
+}
+
+.blog__quote-author {
+  font-family: "Montserrat-Bold";
+  line-height: 22px;
+  color: #363838;
+}
+
+.blog__desine {
+  padding-bottom: 38px;
+  margin-bottom: 54px;
+}
+
+.blog__desine-box {
+  position: relative;
+}
+
+.blog__desine-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .footer {

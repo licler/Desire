@@ -41,6 +41,21 @@
         bottom: 0;
     }
 }
+.menu__list-links--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 2px;
+        opacity: .7;
+        border-radius: 1px;
+        background-color: $title;
+        left: 0;
+        bottom: 0;
+    }
+}
 .logo {
     margin: 0 auto;
 }
