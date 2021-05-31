@@ -1,17 +1,26 @@
 // start blog1
 .blog {
-    margin-top: 59px;
+    padding-top: 59px;
+    padding-bottom: 66px;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
     }
+
+    &__content {
+        width: 729px;
+    }
+
     &__furniture {
         padding-bottom: 50px;
         margin-bottom: 75px;
     }
+
     &__furniture-images {
         margin-bottom: 25px;
     }
+
     &__furniture-box {
         max-width: 729px;
         font-size: 14px;
@@ -19,6 +28,7 @@
         color: #707070;
         margin-bottom: 19px;
     }
+
     &__title {
         max-width: 729px;
         font-family: "Montserrat-Bold";
@@ -27,9 +37,11 @@
         color: $title;
         margin-bottom: 6px;
     }
+
     &__text {
         max-width: 729px;
     }
+
     &__quote {
         width: 729px;
         text-align: center;
@@ -38,6 +50,7 @@
         padding: 54px 65px;
         margin-bottom: 74px;
     }
+
     &__quote-box {
         font-size: 24px;
         font-family: "OpenSans-LightItalic";
@@ -47,6 +60,7 @@
         padding-bottom: 23px;
         margin-bottom: 23px;
     }
+
     &__box::before {
         content: "";
         position: absolute;
@@ -58,24 +72,77 @@
         height: 1px;
         background-color: #979797;
     }
+
     &__quote-author {
         font-family: "Montserrat-Bold";
         line-height: 22px;
         color: $title;
     }
+
     &__desine {
         padding-bottom: 38px;
         margin-bottom: 54px;
     }
-    
+
     &__desine-box {
         position: relative;
     }
+
     &__desine-link {
-       position: absolute; 
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__table {
+        padding-bottom: 50px;
+    }
+
+    .slick-btn {
+        border: none;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .slick-prev {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        z-index: 6;
+    }
+
+    .slick-next {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+        z-index: 6;
+    }
+
+    .pagination {
+        width: 729px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #707070;
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__item {
+            margin-right: 12px;
+        }
+
+        &__item-link--active {
+            color: $title;
+        }
+        &__item-images {
+            margin-bottom: -2px;
+        }
     }
 }
 
