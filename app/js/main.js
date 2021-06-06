@@ -26,6 +26,8 @@ $(function(){
     $('.right-btn').addClass('right-btn--close');
   });
 
+  // $('input, select').styler();
+
 
   var mixer = mixitup('.furniture__items',{
     load: {
