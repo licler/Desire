@@ -27,7 +27,19 @@ $(function(){
   });
 
   // $('input, select').styler();
+  $('.contact__slider-items').slick({	
+    arrows: false,
+    dots: true,
+    slidesToShow: 10,
+    slidesToScroll: 10
+  });
 
+
+
+
+
+
+  
 
   var mixer = mixitup('.furniture__items',{
     load: {
