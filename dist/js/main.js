@@ -38,7 +38,10 @@ $(function(){
 
 
 
-
+  $('.header__menu-btn').on('click', function(){
+    $('.menu__list'). slideToggle();
+    $('.menu__list'). slideToggle();
+  });
   
 
   var mixer = mixitup('.furniture__items',{
