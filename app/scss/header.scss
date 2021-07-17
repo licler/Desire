@@ -10,10 +10,6 @@
     padding-right: 35px;
 }
 
-.header__menu-box {
-    padding-right: 50px;
-}
-
 .menu__list {
     display: flex;
 }
@@ -137,5 +133,7 @@
     }
 }
 
-
+.header__menu-btn {
+    display: none;
+}
 // end header

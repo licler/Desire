@@ -38,11 +38,15 @@ $(function(){
 
 
 
-  $('.header__menu-btn').on('click', function(){
-    $('.menu__list'). slideToggle();
-    $('.menu__list'). slideToggle();
-  });
+  // $('.header__menu-btn').on('click', function(){
+  //   $('.menu__list'). slideToggle();
+  // });
   
+  $('.header__menu-btn').on('click', function(){
+    $('.header__menu').toggleClass('header__menu--active');
+  });
+ 
+
 
   var mixer = mixitup('.furniture__items',{
     load: {
