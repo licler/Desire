@@ -14,7 +14,7 @@
     }
     &__item-text {
         margin-bottom: 13px;
-        width: 500px;
+        max-width: 500px;
         color: $text;
     }
     &__item-email {
