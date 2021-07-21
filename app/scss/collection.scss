@@ -28,8 +28,9 @@
 
     &__box-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-column-gap: 30px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+        // padding: 0 15px;
     }
 
     &__box {
@@ -51,8 +52,9 @@
         transition: opacity .9s;
     }
 
-    &__box-images {
+    &__box-img {
         min-height: 350px;
+        width: 100%;
         object-fit: cover;
     }
 
