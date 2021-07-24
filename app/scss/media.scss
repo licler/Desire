@@ -372,6 +372,9 @@
         margin-top: 0;
     }
 
+    .works__item-text {
+        max-width: 380px;
+    }
 }
 
 // end works
@@ -536,6 +539,7 @@
     .inspiration__list {
         margin-left: 0;
     }
+
     .gallery {
         padding: 80px 0 40px;
     }
@@ -564,6 +568,7 @@
     .inspiration__item {
         font-size: 15px;
     }
+
     .inspiration__item-text {
         margin-right: 20px;
     }
@@ -577,6 +582,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (max-width: 500px) {
     .partners__items {
         grid-template-columns: repeat(2, 1fr);
@@ -590,38 +596,47 @@
     .blog__wrapper {
         flex-wrap: wrap;
     }
+
     .aside {
         margin-left: 0px;
         order: -1;
     }
+
     .aside__resents {
         margin-bottom: 20px;
     }
+
     .blog {
         padding-bottom: 40px;
     }
+
     .blog__table {
         padding-bottom: 20px;
     }
 }
+
 @media (max-width: 760px) {
     .blog__content {
         max-width: 729;
         width: 100%;
     }
 }
+
 @media (max-width: 570px) {
     .blog__quote {
         padding: 20px;
     }
+
     .blog__quote-box {
         font-size: 18px;
         padding-bottom: 0;
     }
+
     .blog__furniture {
         padding-bottom: 0;
         margin-bottom: 30px;
     }
+
     .blog__desine {
         padding-bottom: 0;
         margin-bottom: 30px;
@@ -634,15 +649,18 @@
         font-size: 16px;
         line-height: 23px;
     }
+
     .blog__text {
         font-size: 14px;
         line-height: 23px;
     }
+
     .blog__quote-box {
         font-size: 14px;
         line-height: 23px;
         padding-bottom: 0;
     }
+
     .blog__quote-author {
         font-size: 14px;
     }
@@ -656,35 +674,42 @@
         margin-left: 10px;
     }
 }
+
 @media (max-width: 650px) {
     .blog__slider-item {
         font-size: 14px;
         line-height: 23px;
     }
 }
+
 @media (max-width: 570px) {
     .blog__quote--sigle {
         padding: 0;
     }
 }
+
 @media (max-width: 540px) {
     .comments__items {
         flex-wrap: wrap;
     }
+
     .comments__content {
         margin-top: 20px;
     }
+
     .comments__form-box {
         flex-wrap: wrap;
     }
+
     .comments__input:first-child {
         margin-bottom: 20px;
         margin-right: 0;
     }
 }
+
 @media (max-width: 385px) {
     .blog__quote-desc--sigle {
-font-size: 14px;
+        font-size: 14px;
     }
 }
 
@@ -696,14 +721,17 @@ font-size: 14px;
         width: 100%;
     }
 }
+
 @media (max-width: 1140px) {
     .contact__slider-items {
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 700px) {
     .contact__box {
         margin-left: 0;
     }
 }
+
 // end Contact
