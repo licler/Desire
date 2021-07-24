@@ -1,0 +1,45 @@
+// start ourblog
+.ourblog {
+    margin-bottom: 99px;
+    &__title {
+        font-size: 36px;
+        line-height: 51px;
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        width: 430px;
+        margin: 0 auto;
+        color: $title;
+        text-align: center;
+    }
+    &__items {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-link {
+        margin-bottom: 20px;
+    }
+    &__item-info {
+        display: flex;
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+        margin-bottom: 7px;
+    }
+    &__item-author {
+        margin-left: 6px;
+    }
+    &__item-name {
+        margin-left: 6px;
+    }
+    &__item-text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        font-family: "Montserrat-Bold";
+        color: $title;
+    }
+}
+
+
+// end ourblog

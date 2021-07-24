@@ -1,0 +1,75 @@
+// start works
+.works {
+    padding-bottom: 109px;
+    &__items {
+        margin-top: 39px;
+        display: flex;
+        border-bottom: 2px solid $title;
+    }
+
+    &__item {
+        padding: 0 10px;
+    }
+
+    &__item--design {
+        margin-right: 317px;
+        
+    }
+
+    &__item--product {
+        position: relative;
+    }
+
+    &__item--product::before {
+        position: absolute;
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background-color: $title;
+        bottom: 0px;
+        left: 10px;
+    }
+
+    &__item--measure {
+        margin-left: 306px;
+        margin-top: 38px;
+        position: relative;
+    }
+
+    &__item--measure::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background-color: $title;
+        top: -38px;
+        left: 10px;
+    }
+
+    &__item-box {
+        display: flex;
+        height: 42px;
+        align-items: center;
+        margin-bottom: 13px;
+
+    }
+
+    &__item-title {
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: $title;
+        padding-left: 13px;
+    }
+
+    &__item-text {
+        max-width: 246px;
+    }
+}
+
+
+
+
+// end works

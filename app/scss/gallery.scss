@@ -1,0 +1,10 @@
+// start gallery
+.gallery {
+    padding: 83px 0 148px;
+}
+.furniture__item-link:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+// end gallery

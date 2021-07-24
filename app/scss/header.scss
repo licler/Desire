@@ -5,30 +5,135 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .header__menu {
     padding-right: 35px;
 }
-.header__menu-box {
-    padding-right: 50px;
-}
+
 .menu__list {
     display: flex;
 }
-.menu__list-item + .menu__list-item {
+
+.menu__list-item+.menu__list-item {
     padding-left: 80px;
 }
+
 .menu__list-item {
     padding-left: 30px;
     font-weight: 700;
 }
+.menu__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 53px;
+        height: 2px;
+        opacity: .7;
+        border-radius: 1px;
+        background-color: $title;
+        left: 0;
+        bottom: 0;
+    }
+}
+// .menu__list-links--active {
+//     padding-bottom: 4px;
+//     position: relative;
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         width: 39px;
+//         height: 2px;
+//         opacity: .7;
+//         border-radius: 1px;
+//         background-color: $title;
+//         left: 0;
+//         bottom: 0;
+//     }
+// }
 .logo {
     margin: 0 auto;
 }
+
 .header__btn {
-        border: none;
-        background-color: transparent;
+    border: none;
+    background-color: transparent;
 }
 
+.right-btn {
+    z-index: 2000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 695px;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 41px;
+    box-shadow: -2px 3px 17px 0 #000;
+    transition: all .6s;
+    &.right-btn--close {
+        transform: translateX(500%);
+       
+    }
+    &__close {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        width: 26px;
+        height: 26px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
 
+    &__content{
+        text-align: center;
+        max-width: 483px;
+        margin: 0 auto;
+    }
+     &__logo {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 26px;
+        margin-left: -60px;
+    }
 
+    &__title {
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 51px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 10px;
+        color: $title;
+        position: relative;
+    }
+
+    &__title::before {
+        content: "";
+        width: 252px;
+        height: 1px;
+        background-color: #6D7278;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    &__text {
+        padding-top: 17px;
+        padding-bottom: 75px;
+    }
+    &__picture {
+        max-width: 485px;
+    }
+}
+
+.header__menu-btn {
+    display: none;
+}
 // end header

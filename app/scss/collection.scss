@@ -1,0 +1,102 @@
+// start collection
+.collection {
+    &__inner-text {
+        max-width: 730px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__inner-title {
+        position: relative;
+        padding-bottom: 25px;
+    }
+
+    &__inner-title::before {
+        content: "";
+        position: absolute;
+        width: 252px;
+        height: 1px;
+        bottom: 0;
+        background-color: #6D7278;
+        top: 75px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    &__box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+        // padding: 0 15px;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__box-info {
+        background-color: rgba(#fff, .7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity .9s;
+    }
+
+    &__box-img {
+        min-height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__box-title {
+        font-size: 20px;
+        line-height: 24px;
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 19px;
+    }
+
+    &__box-title::before {
+        content: "";
+        width: 200px;
+        height: 1px;
+        position: absolute;
+        background-color: #6D7278;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__box-desc {
+        padding-top: 19px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.collection__box:hover .collection__box-info {
+    opacity: 1;
+    transition: opacity .6s;
+}
+
+.title {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+}
+
+// end collection

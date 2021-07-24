@@ -1,0 +1,85 @@
+// start slider
+.slider {
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &__item-box {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-info {
+        padding-top: 174px;
+        max-width: 645px;
+        margin-left: 25px;
+
+    }
+
+    &__item-title {
+        font-size: 110px;
+        line-height: 134px;
+        font-family: "Montserrat-Bold";
+        color: $title;
+        margin-top: 0;
+        position: relative;
+        padding-bottom: 26px;
+    }
+
+    &__item-title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 185px;
+        background-color: #6D7278;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__item-desc {
+        margin-top: 26px;
+    }
+
+    &__item-img {
+        margin-left: -12%;
+        object-fit: cover;
+        max-width: 703px;
+        height: 815px;
+
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 87px;
+
+        li {
+            display: inline-block;
+            margin-right: 13px;
+            margin-left: 13px;
+        }
+
+        button {
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: $title;
+        }
+
+        li.slick-active {
+            button {
+                background-color: #FFEF35;
+            }
+        }
+    }
+}
+
+
+
+
+// end slider

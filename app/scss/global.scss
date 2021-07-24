@@ -1,65 +1,126 @@
 //Обнуления///////////////////////////////////////////////////////////////////////////////////////////////
-html{
+html {
 	box-sizing: border-box;
 	height: 100%;
 	min-width: $minWidth;
 }
-*, *::before, *::after{
+
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+html,
+body {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	font-weight: inherit;
 	line-height: inherit;
 	font-size: inherit;
 }
-textarea{
+
+textarea {
 	resize: none;
 }
-input, button, textarea{
+
+input,
+button,
+textarea {
 	font-family: inherit;
 }
-button{
+
+button {
 	cursor: pointer;
 }
-a{
+
+a {
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
 }
-ul, li{
+
+ul,
+li {
 	margin: 0;
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	display: block;
 }
 
 //Прижимаем футер к низу///////////////////////////////////////////////////////////////////////////////////////////////
-.wrapper{
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 	overflow-x: hidden;
 }
-.content{
+
+.main {
 	flex: 1 0 auto;
 }
-.footer{
+
+.footer {
 	flex: 0 0 auto;
 }
 
 //Дежурные классы///////////////////////////////////////////////////////////////////////////////////////////////
 .container {
-    max-width: 1140px;
-    padding: 0 15px;
-    margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container-fluid {
+	max-width: 1920px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
 
-body{
+body {
 	height: 100%;
 	min-width: $minWidth;
-	line-height: 1;
+	line-height: 27px;
 	font-family: $fontFamily;
 	color: $text;
 	font-size: 16px;
+	font-weight: 400;
+}
 
+.breadcrumb {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 14px;
+	z-index: 70;
+
+	&__list {
+		display: flex;
+		overflow-x: auto;
+	}
+	&__list-item {
+		position: relative;
+		padding-right: 8px;
+	}
+
+	&__list-link {
+		font-size: 14px;
+		color: $text;
+	}
+
+	&__list-item::after {
+		content: "/";
+		margin-right: 3px;
+		position: absolute;
+	}
 }
