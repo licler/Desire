@@ -868,6 +868,7 @@ body {
 .inspiration__inner-images {
   margin-right: -23px;
   margin-left: -230px;
+  min-width: 433px;
 }
 
 .inspiration__inner-content {
@@ -1277,7 +1278,7 @@ body {
 }
 
 .aside .social__item-link--whatsapp {
-  background-image: url(../img/whatsapp.svg);
+  background-image: url("../img/whatsapp.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1286,7 +1287,7 @@ body {
 }
 
 .aside .social__item-link--twitter {
-  background-image: url(../img/twitter.svg);
+  background-image: url("../img/twitter.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2600,6 +2601,10 @@ body {
   .works__item--measure {
     margin-left: 0;
     margin-top: 0;
+  }
+
+  .works__item-text {
+    max-width: 380px;
   }
 }
 
