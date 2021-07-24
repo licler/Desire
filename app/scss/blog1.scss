@@ -44,7 +44,8 @@
     }
 
     &__quote {
-        width: 729px;
+        max-width: 729px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
         background: rgba(#DFDFDF, .5);
@@ -125,7 +126,8 @@
     }
 
     .pagination {
-        width: 729px;
+        max-width: 729px;
+        width: 100%;
         font-size: 14px;
         font-weight: 600;
         color: #707070;

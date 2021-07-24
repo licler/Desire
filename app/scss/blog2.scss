@@ -77,7 +77,7 @@
 .blog__slider-item {
     display: flex !important;
     justify-content: space-between;
-    height: 130px;
+    min-height: 130px;
     align-items: center;
     border-top: 1px solid #DFDFDF;
     border-bottom: 1px solid #DFDFDF;

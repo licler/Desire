@@ -48,6 +48,7 @@ html,
 body {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 h1,
@@ -1005,7 +1006,8 @@ body {
 }
 
 .blog__quote {
-  width: 729px;
+  max-width: 729px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   background: rgba(223, 223, 223, 0.5);
@@ -1092,7 +1094,8 @@ body {
 }
 
 .blog .pagination {
-  width: 729px;
+  max-width: 729px;
+  width: 100%;
   font-size: 14px;
   font-weight: 600;
   color: #707070;
@@ -1375,7 +1378,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 130px;
+  min-height: 130px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2036,6 +2039,12 @@ body {
   }
 }
 
+@media (max-width: 1700px) {
+  .contact__slider-images {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1530px) {
   .collection__box-wrapper {
     -ms-grid-columns: (1fr)[4];
@@ -2067,6 +2076,10 @@ body {
     max-width: 825px;
     width: 100%;
     margin-left: 0;
+  }
+
+  .contact__slider-items {
+    margin-bottom: 30px;
   }
 }
 
@@ -2103,6 +2116,32 @@ body {
 
   .slider .slick-dots {
     padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .blog__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .aside {
+    margin-left: 0px;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .aside__resents {
+    margin-bottom: 20px;
+  }
+
+  .blog {
+    padding-bottom: 40px;
+  }
+
+  .blog__table {
+    padding-bottom: 20px;
   }
 }
 
@@ -2180,6 +2219,19 @@ body {
   }
 }
 
+@media (max-width: 800px) {
+  .comments__item-share {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .blog__content {
+    max-width: 729;
+    width: 100%;
+  }
+}
+
 @media (max-width: 745px) {
   .header__btn {
     display: none;
@@ -2227,6 +2279,12 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .contact__box {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 675px) {
   .ourblog__title {
     font-size: 30px;
@@ -2241,6 +2299,13 @@ body {
   .ourblog__item-images {
     max-width: 539px;
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .blog__slider-item {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 
@@ -2300,6 +2365,31 @@ body {
   }
 }
 
+@media (max-width: 570px) {
+  .blog__quote {
+    padding: 20px;
+  }
+
+  .blog__quote-box {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+
+  .blog__furniture {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .blog__desine {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .blog__quote--sigle {
+    padding: 0;
+  }
+}
+
 @media (max-width: 550px) {
   .furniture__inner {
     display: -ms-grid;
@@ -2322,6 +2412,27 @@ body {
 @media (max-width: 545px) {
   .works__item--measure {
     margin-left: 195px;
+  }
+}
+
+@media (max-width: 540px) {
+  .comments__items {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .comments__content {
+    margin-top: 20px;
+  }
+
+  .comments__form-box {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .comments__input:first-child {
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
@@ -2373,7 +2484,7 @@ body {
 
   .menu__list-link {
     display: block;
-    padding: 10px 0;
+    padding: 12px 0;
   }
 
   .menu__list-item {
@@ -2409,17 +2520,7 @@ body {
   }
 
   .menu__list-link--active::before {
-    content: "";
-    position: absolute;
-    width: 53px;
-    height: 2px;
-    opacity: .7;
-    border-radius: 1px;
-    background-color: #363838;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
+    display: none;
   }
 
   .inspiration__inner-title {
@@ -2545,6 +2646,33 @@ body {
   .furniture__item {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog__title {
+    width: 100%;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .blog__text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .blog__quote-box {
+    font-size: 14px;
+    line-height: 23px;
+    padding-bottom: 0;
+  }
+
+  .blog__quote-author {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 385px) {
+  .blog__quote-desc--sigle {
+    font-size: 14px;
   }
 }
 
